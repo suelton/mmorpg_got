@@ -8,10 +8,7 @@ UsuariosDAO.prototype.inserirUsuario = function(usuario){
             collection.insert(usuario);
             mongoclient.close();
         });
-    });
-
-    console.log(usuario);
-
+    });   
 }
 
 UsuariosDAO.prototype.autenticar = function(usuario, req, res){
